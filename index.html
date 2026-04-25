@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chika Moronu — Developer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #2563eb;
+      margin-bottom: 1.2rem;
+      object-fit: cover;
+    }
+
+    .hero h1 { font-size: 2.2rem; color: #f1f5f9; }
+    .hero .title {
+      color: #60a5fa;
+      margin: 0.4rem 0 0.8rem;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .hero .bio {
+      color: #94a3b8;
+      line-height: 1.8;
+      max-width: 560px;
+      margin-bottom: 1.5rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .tag {
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #7dd3fc;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.6rem 1.4rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-primary { background: #2563eb; color: white; }
+    .btn-outline {
+      border: 1px solid #475569;
+      color: #cbd5e1;
+      background: transparent;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      max-width: 860px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      color: #f1f5f9;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    /* ── PROJECT CARDS ── */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .project-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .project-card:hover {
+      border-color: #2563eb;
+      transform: translateY(-3px);
+    }
+
+    .project-icon {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .project-card h3 {
+      font-size: 1rem;
+      color: #f1f5f9;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: #94a3b8;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .project-tag {
+      background: #0f172a;
+      border: 1px solid #334155;
+      color: #60a5fa;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+    }
+
+    /* ── CONTACT ── */
+    .contact-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact-card p {
+      color: #94a3b8;
+      margin-bottom: 1.2rem;
+      line-height: 1.7;
+    }
+
+    .contact-card a { color: #60a5fa; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      color: #334155;
+      font-size: 0.8rem;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <img
+      class="avatar"
+      src="https://ui-avatars.com/api/?name=Chika+Moronu&background=2563eb&color=fff&size=200"
+      alt="Chika Moronu"
+    />
+    <h1>Chika Moronu</h1>
+    <p class="title">Hobbyist Full-Stack Developer</p>
+    <p class="bio">
+      I design and build practical software tools that solve real industry problems —
+      from asset tracking and oilfield data verification to business management suites.
+      Passionate about turning complex workflows into clean, usable applications.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Full-Stack</span>
+      <span class="tag">React Native</span>
+      <span class="tag">Next.js</span>
+      <span class="tag">Firebase</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Python</span>
+    </div>
+
+    <div class="links">
+      <a class="btn btn-primary" href="mailto:cmoronu74@gmail.com">📧 Contact Me</a>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2 class="section-title">🛠️ Projects</h2>
+    <div class="projects">
+
+      <div class="project-card">
+        <div class="project-icon">📦</div>
+        <h3>AOT — Assets Management Tracker</h3>
+        <p>
+          A full-featured asset tracking system for managing equipment lifecycle,
+          maintenance schedules, failure reports, job scheduling, and certification alerts.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🛢️</div>
+        <h3>LAS/DLIS Log Verifier with QC</h3>
+        <p>
+          An oilfield well-log file verifier that parses and quality-checks LAS and DLIS
+          format files, flagging data anomalies and ensuring log integrity before use.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">LAS/DLIS</span>
+          <span class="project-tag">QC</span>
+          <span class="project-tag">Data Validation</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">💼</div>
+        <h3>Diatorach Business Suite</h3>
+        <p>
+          A comprehensive business management suite designed to streamline operations,
+          manage records, and support day-to-day business workflows efficiently.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Full-Stack</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">React Native</span>
+          <span class="project-tag">Business Tools</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <h2 class="section-title">📬 Get In Touch</h2>
+    <div class="contact-card">
+      <p>
+        I'm always open to collaboration, feedback, or just a good tech conversation.<br/>
+        Feel free to reach out!
+      </p>
+      <a class="btn btn-primary" href="mailto:cmoronu74@gmail.com">cmoronu74@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 Chika Moronu · Built with passion 🚀
+  </footer>
+
+</body>
+</html>
